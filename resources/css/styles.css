@@ -1,1 +1,8 @@
+.carousel-caption {
+    text-align: right;
+    margin-right: 1rem;
+}
 
+.carousel img {
+    max-height: 75vh;
+}

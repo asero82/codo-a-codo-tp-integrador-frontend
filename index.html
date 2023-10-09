@@ -43,7 +43,7 @@
                             <a class="nav-link" href="#lugar">El lugar y la fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conviértete en orador</a>
+                            <a class="nav-link" href="#form">Conviértete en orador</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-success" href="#">Comprar tickets</a>
@@ -143,7 +143,7 @@
                                 Lorem ipsum dolor sit amte, consectetur adipisicing elit- Et voluptatibus perferendis
                                 deleniti, totam fuga sequi iste! Facilis explicabo repellat ut simlique incidunt? Ullam
                                 nobis beatae, corporis facilis veniam magni raione!
-                            </p>                            
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                             </h5>
                             <p class="card-text">Lorem ipsum dolor sit amte, consectetur adipisicing elit- Et
                                 voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut
-                                simlique incidunt? Ullam nobis beatae, corporis facilis veniam magni raione!</p>                            
+                                simlique incidunt? Ullam nobis beatae, corporis facilis veniam magni raione!</p>
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                             <h5 class="card-title">Ada Lovelace</h5>
                             <p class="card-text">Lorem ipsum dolor sit amte, consectetur adipisicing elit- Et
                                 voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut
-                                simlique incidunt? Ullam nobis beatae, corporis facilis veniam magni raione!</p>                            
+                                simlique incidunt? Ullam nobis beatae, corporis facilis veniam magni raione!</p>
                         </div>
                     </div>
                 </div>
@@ -185,21 +185,54 @@
         <section id="lugar">
             <div class="card mb-3 mt-3 bg-dark">
                 <div class="row">
-                  <div class="col-md-6">
-                    <img src="./resources/img/honolulu.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body text-start text-white">
-                      <h5 class="card-title">Bs As - Octubre</h5>
-                      <p class="card-text">Buenos Aires es la provincia y localidad más grande de Argentina. En los Estados Unidos. Honolulu
-                        es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre  de Honolulu
-                        se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado
-                        una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-                      <button type="button" class="btn btn-outline-light">Conoce más</button>
+                    <div class="col-md-6">
+                        <img src="./resources/img/honolulu.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
-                  </div>
+                    <div class="col-md-6">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title">Bs As - Octubre</h5>
+                            <p class="card-text">Buenos Aires es la provincia y localidad más grande de Argentina. En
+                                los Estados Unidos. Honolulu
+                                es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de
+                                Honolulu
+                                se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado
+                                de Honolulu han formado
+                                una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600
+                                km<sup>2</sup> de superficie).</p>
+                            <button type="button" class="btn btn-outline-light">Conoce más</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
+        </section>
+
+        <section id="form">
+            <form method="post" action="">
+                <fieldset>
+                    <legend class="text-uppercase form-text">
+                        <p class="fs-6">Conviertete en un</p>
+                        <p>Orador</p>
+                        <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
+                    </legend>
+                    
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+                        <div class="col mb-3">
+                            <label for="Apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="Apellido" name="Apellido">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>                    
+                    <textarea id="tema" name="tema" class="form-control" rows="3">Sobre que quieres hablar?
+                    </textarea>
+
+                    <button type="submit" class="form-control btn btn-success">Enviar</button>
+                </fieldset>
+            </form>
         </section>
     </section>
 

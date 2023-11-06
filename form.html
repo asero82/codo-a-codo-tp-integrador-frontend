@@ -52,30 +52,89 @@
                 </div>
             </div>
         </nav>
-
+        <section>
+            <div class="row">
+                <div class="col">
+                    <div class="card border border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <h5>80%</h5>
+                            <small class="card-text text-muted">* presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-success">
+                        <div class="card-body">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <h5>50%</h5>
+                            <small class="card-text text-muted">* presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-warning">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <h5>15%</h5>
+                            <small class="card-text text-muted">* presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h6 class="text-muted">VENTA</h6>
+            <h3>VALOR DE TICKET: $200</h3>
+        </section>
         <form id="form_ticket" action="POST" method="">
             <fieldset>
-                <input id="nombre" name="nombre" type="text" placeholder="Nombre" autofocus required />
-                <input id="apellido" name="apellido" type="text" placeholder="Apellido" required />
-                <input id="email" name="email" type="email" placeholder="Correo" required />
+                <div class="row">
+                    <div class="col">
+                        <input id="nombre" name="nombre" type="text" placeholder="Nombre" autofocus required
+                            class="form-control" />
+                        <input id="apellido" name="apellido" type="text" placeholder="Apellido" required
+                            class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input id="email" name="email" type="email" placeholder="Correo" required
+                            class="form-control" />
+                    </div>
+                </div>
             </fieldset>
-            <fieldset>
-                <label for="cantidad">Cantidad:</label>
-                <input id="cantidad" name="cantidad" value="1" type="number" />
-                <label for="categoria">Categoría:</label>
-                <select id="categoria" name="categoria">
-                    <option value="none"></option>
-                    <option value="estudiante">Estudiante</option>
-                    <option value="trainee">Trainee</option>
-                    <option value="junior">Junior</option>
-                </select>
+            <fieldset class="row">
+                <div class="col">
+                    <label for="cantidad" class="form-control">Cantidad:</label>
+                    <input id="cantidad" name="cantidad" value="1" type="number" class="form-control" />
+                </div>
+                <div class="col">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria" class="form-control">
+                        <option value="none"></option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                </div>
             </fieldset>
-            <fieldset>
-                <input id="total" name="total" type="text" value="Total a Pagar: $" readonly />
+            <fieldset class="row">
+                <div class="col">
+                    <input id="total" name="total" type="text" value="Total a Pagar: $" readonly
+                        class="text-primary bg-info border border-0 form-control" />
+                </div>
             </fieldset>
-            <fieldset>
-                <button type="reset">Borrar</button>
-                <button type="submit">Resumen</button>
+            <fieldset class="row">
+                <div class="col">
+                    <button type="reset" class="form-control text-white bg-success">Borrar</button>
+                </div>
+                <div class="col">
+                    <button type="submit" class="form-control text-white bg-success">Resumen</button>
+                </div>
             </fieldset>
         </form>
     </section>
